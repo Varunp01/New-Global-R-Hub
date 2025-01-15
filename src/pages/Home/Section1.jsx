@@ -1,4 +1,4 @@
-import Form from "./Form";
+import Form from "./Form.jsx";
 
 const HSec1 = () => {
     return (

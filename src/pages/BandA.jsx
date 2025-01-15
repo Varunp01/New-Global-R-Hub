@@ -1,7 +1,7 @@
-import BASec1 from "./BandA/Section1";
-import BASec2 from "./BandA/Section2";
-import BASec3 from "./BandA/Section3";
-import BASec4 from "./BandA/Section4";
+import BASec1 from "./BandA/Section1.jsx";
+import BASec2 from "./BandA/Section2.jsx";
+import BASec3 from "./BandA/Section3.jsx";
+import BASec4 from "./BandA/Section4.jsx";
 
 const BandA = () => {
     return (

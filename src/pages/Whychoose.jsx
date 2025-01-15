@@ -1,7 +1,7 @@
-import HSec2 from "./Home/Section2";
-import WSec1 from "./Whychoose/Section1";
-import WSec3 from "./Whychoose/Section3";
-import WSec4 from "./Whychoose/Section4";
+import HSec2 from "./Home/Section2.jsx";
+import WSec1 from "./Whychoose/Section1.jsx";
+import WSec3 from "./Whychoose/Section3.jsx";
+import WSec4 from "./Whychoose/Section4.jsx";
 
 const Whychoose = () => {
     return (

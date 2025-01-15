@@ -1,7 +1,7 @@
-import RSec1 from "./Reviews/Section1"
-import RSec2 from "./Reviews/Section2";
-import RSec3 from "./Reviews/Section3";
-import RSec4 from "./Reviews/Section4";
+import RSec1 from "./Reviews/Section1.jsx";
+import RSec2 from "./Reviews/Section2.jsx";
+import RSec3 from "./Reviews/Section3.jsx";
+import RSec4 from "./Reviews/Section4.jsx";
 
 const Reviews = () => {
     return (
