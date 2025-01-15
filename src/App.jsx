@@ -5,7 +5,7 @@ import './App.css'
 import Layout from "./pages/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Whychoose from "./pages/Whychoose.jsx";
-import BandA from "./pages/BandA,jsx";
+import BandA from "./pages/BandA.jsx";
 import Reviews from "./pages/Reviews.jsx";
 
 function App() {
