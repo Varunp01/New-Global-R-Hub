@@ -1,0 +1,68 @@
+.fontInter{
+    font-family: "Inter", serif;
+}
+
+@property --num-numbers1 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num-numbers2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num-numbers3 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num-numbers4 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes counter {
+  from {
+    --num-numbers1: 0;
+    --num-numbers2: 0;
+    --num-numbers3: 0;
+    --num-numbers4: 0;
+  }
+  to {
+    --num-numbers1: 900;
+    --num-numbers2: 270;
+    --num-numbers3: 17;
+    --num-numbers4: 30;
+  }
+}
+
+/* width */
+.customScroll::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+/* Track */
+.customScroll::-webkit-scrollbar-track {
+  background: #7bb0ff;
+  border-radius: 5px;
+
+}
+
+/* Handle */
+.customScroll::-webkit-scrollbar-thumb {
+  background: #0066FF;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.customScroll::-webkit-scrollbar-thumb:hover {
+  background: #2b80ff;
+  border-radius: 5px;
+}
+
