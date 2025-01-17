@@ -30,6 +30,7 @@ const Layout = () => {
                     </>
                     : <>
                         <div className="navbtns md:w-2/3  sm:hidden sm:items-center justify-center text-center md:justify-normal">
+                            <div className="navbtn1 px-5 py-1 text-[#68696F] text-base font-medium"><span className="hover:bg-[#F93800]/20 rounded-md"><svg onClick={() => setShowNav(false)} className=" m-3 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></span></div>
                             <div className="navbtn1 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/" className=" hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Home</span></Link></div>
                             <div className="navbtn2 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/Whychoose" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 active:bg-[#F93800]/20 rounded-md">Why Choose Global R-Hub?</span></Link></div>
                             <div className="navbtn3 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/BandA" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Before & After</span></Link></div>
