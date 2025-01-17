@@ -6,7 +6,7 @@ const RSec4 = () => {
                 <div className="bg-[#0F172A] py-24 md:px-[50px] rounded-[30px]">
                     <div className=" flex justify-center fontInter font-medium text-[#0066FF] text-lg py-2 px-6">Let’s Connect</div>
                     <div className="flex justify-center text-center fontInter font-bold text-white text-5xl py-2 px-6 md:px-60">Start Your Research Journey Today</div>
-                    <div className="flex justify-center text-center fontInter font-medium text-[#818181] text-base py-2 px-6 md:px-64">Connect with expert mentors in your chosen field to guide you through every step of your research project.</div>
+                    <div className="flex justify-center text-center fontInter font-medium text-[#818181] text-base py-2 px-6 lg:px-64">Connect with expert mentors in your chosen field to guide you through every step of your research project.</div>
                     <div className="my-5 flex justify-center">
                                 <a href="/#form">
                                     <div class=" bg-[#0F172A] relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">

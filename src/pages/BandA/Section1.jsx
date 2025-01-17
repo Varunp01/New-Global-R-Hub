@@ -5,7 +5,7 @@ const BASec1 = () => {
             <div className=" my-14  px-20">
                 <div className=" flex justify-center fontInter font-medium text-[#0066FF] text-lg py-2 px-6">Before & After</div>
                 <div className="flex justify-center text-center fontInter font-bold text-black text-5xl py-2 px-6 ">See the Incredible Transformations</div>
-                <div className="flex justify-center text-center fontInter font-medium text-[#818181] text-base py-2 px-6 md:px-64">Be inspired by the remarkable journeys of our clients. Witness firsthand the power to achieve stunning results. Explore our diary of inspiring before and after  transformations possible.</div>
+                <div className="flex justify-center text-center fontInter font-medium text-[#818181] text-base py-2 px-6 lg:px-64">Be inspired by the remarkable journeys of our clients. Witness firsthand the power to achieve stunning results. Explore our diary of inspiring before and after  transformations possible.</div>
                 <div className="my-5 flex justify-center">
                     <a href="/#form">
                         <div class=" bg-[#0F172A] relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
