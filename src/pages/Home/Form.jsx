@@ -57,13 +57,13 @@ function Form() {
     return (
         <>
             {(!dataSend)
-                ? <form className="bg-white border-black border-2 px-9 py-4 w-[90%] rounded-[24px]" onSubmit={onSubmitButton} role="form">
+                ? <form className="bg-white border-white border-2 px-9 py-4 w-[90%] rounded-[24px]" onSubmit={onSubmitButton} role="form">
                     <h2 className="font-semibold text-3xl fontInter">Begin Your Research Journey Today!</h2>
                     <div className="text-center mb-3">
                     </div>
                     <hr />
                     <div className="md:flex">
-                        <div className="">
+                        <div className=" md:mr-4">
 
                             <label for="First-Name" class="mt-4 block mb-2 text-sm font-medium text-gray-900">First Name</label>
                             <div class=" relative mb-2">

@@ -34,9 +34,9 @@
     --num-numbers4: 0;
   }
   to {
-    --num-numbers1: 900;
-    --num-numbers2: 270;
-    --num-numbers3: 17;
+    --num-numbers1: 60;
+    --num-numbers2: 20;
+    --num-numbers3: 95;
     --num-numbers4: 30;
   }
 }
@@ -65,4 +65,3 @@
   background: #2b80ff;
   border-radius: 5px;
 }
-

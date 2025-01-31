@@ -13,7 +13,7 @@ const Home = () => {
     return (
     <>
     <HSec1></HSec1>
-    <StarBand></StarBand>
+    {/* <StarBand></StarBand> */}
     <HSec2></HSec2>
     <HSec3></HSec3>
     <HSec4></HSec4>

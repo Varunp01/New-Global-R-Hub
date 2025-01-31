@@ -7,28 +7,28 @@ const HSec2 = () => {
                     <div class="grid grid-cols-2 gap-7">
                         <div className="">
                             <dd class="order-first tracking-tight">
-                                <span class="fontInter font-bold text-[#0066FF] text-4xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sr-only">900</span>+</span>
+                                <span class="fontInter font-bold text-[#0066FF] text-4xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sr-only">60</span>+</span>
                             </dd>
-                            <dt class="fontInter font-medium text-[#818181] text-base">Indigo Research students supported since 2019</dt>
+                            <dt class="fontInter font-medium text-[#818181] text-base">Product Ideas</dt>
                         </div>
                         <div className="">
                             <dd class="order-first tracking-tight">
-                                <span class="fontInter font-bold text-[#0066FF] text-4xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers2)] before:content-[counter(num)]"> <span class="sr-only">270</span>+</span>
+                                <span class="fontInter font-bold text-[#0066FF] text-4xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers2)] before:content-[counter(num)]"> <span class="sr-only">20</span>+</span>
                             </dd>
-                            <dt class="fontInter font-medium text-[#818181] text-base">Mentors from world’s leading universities.</dt>
+                            <dt class="fontInter font-medium text-[#818181] text-base">Mentors & Faculty Advisors</dt>
                         </div>
                         <div className="">
                             <dd class="order-first tracking-tight">
-                                <span class="fontInter font-bold text-[#0066FF] text-4xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers3)] before:content-[counter(num)]"> <span class="sr-only">17</span>. 15 %</span>
+                                <span class="fontInter font-bold text-[#0066FF] text-4xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers3)] before:content-[counter(num)]"> <span class="sr-only">95</span> %</span>
                             </dd>
-                            <dt class="fontInter font-medium text-[#818181] text-base">Indigo alumni acceptance rate to the lvy League, <span className="text-[#0066FF]">2.91x higher</span> than the global average</dt>
+                            <dt class="fontInter font-medium text-[#818181] text-base">Student Satisfaction Rate</dt>
                         </div>
-                        <div className="">
+                        {/* <div className="">
                             <dd class="order-first tracking-tight">
                                 <span class="fontInter font-bold text-[#0066FF] text-4xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers4)] before:content-[counter(num)]"> <span class="sr-only">30</span>+</span>
                             </dd>
                             <dt class="fontInter font-medium text-[#818181] text-base">Academic publications have published our student’s work</dt>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

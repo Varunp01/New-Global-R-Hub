@@ -3,8 +3,8 @@ const HSec3 = () => {
     return (
         <>
         <div className=" my-14 ">
-            <div className=" flex justify-center fontInter font-medium text-[#0066FF] text-lg py-2 px-6">Why Choose Us</div>
-            <div className="flex justify-center fontInter font-bold text-black text-5xl py-2 px-6">Global R Hub?</div>
+            {/* <div className=" flex justify-center fontInter font-medium text-[#0066FF] text-lg py-2 px-6">Why Choose Us</div> */}
+            <div className="flex justify-center fontInter font-bold text-black text-5xl py-2 px-6">Why Choose Global R Hub?</div>
             <div className="flex justify-around flex-wrap py-5 px-6">
 
                 <div class="w-[350px] px-5 mt-4 pt-20 pb-10 border-2 rounded-3xl max-w-sm overflow-hidden shadow-lg text-center hover:shadow-2xl hover:shadow-[#0066ff75]">
