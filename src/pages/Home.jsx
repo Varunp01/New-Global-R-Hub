@@ -17,7 +17,7 @@ const Home = () => {
     <HSec2></HSec2>
     <HSec3></HSec3>
     <HSec4></HSec4>
-    <HSec5></HSec5>
+    {/* <HSec5></HSec5> */}
     <HSec6></HSec6>
     <HSec7></HSec7>
     <HSec8></HSec8>
