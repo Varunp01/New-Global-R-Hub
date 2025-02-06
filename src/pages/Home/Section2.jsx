@@ -7,13 +7,13 @@ const HSec2 = () => {
                     <div class="grid grid-cols-2 gap-7">
                         <div className="">
                             <dd class="order-first tracking-tight">
-                                <span class="fontInter font-bold text-[#0066FF] text-7xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sr-only">60</span>+</span>
+                                <span class="fontInter font-bold text-[#0066FF] text-7xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sr-only">180</span>+</span>
                             </dd>
-                            <dt class="fontInter font-medium text-[#818181] text-base">Product Ideas</dt>
+                            <dt class="fontInter font-medium text-[#818181] text-base">Project Ideas</dt>
                         </div>
                         <div className="">
                             <dd class="order-first tracking-tight">
-                                <span class="fontInter font-bold text-[#0066FF] text-7xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers2)] before:content-[counter(num)]"> <span class="sr-only">20</span>+</span>
+                                <span class="fontInter font-bold text-[#0066FF] text-7xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers2)] before:content-[counter(num)]"> <span class="sr-only">30</span>+</span>
                             </dd>
                             <dt class="fontInter font-medium text-[#818181] text-base">Mentors & Faculty Advisors</dt>
                         </div>
@@ -44,13 +44,13 @@ const HSec2 = () => {
                     <div class="grid grid-cols-2 gap-7">
                     <div className="">
                             <dd class="order-first tracking-tight">
-                                <span class="fontInter font-bold text-[#0066FF] text-5xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sr-only">60</span>+</span>
+                                <span class="fontInter font-bold text-[#0066FF] text-5xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sr-only">180</span>+</span>
                             </dd>
-                            <dt class="fontInter font-medium text-[#818181] text-base">Product Ideas</dt>
+                            <dt class="fontInter font-medium text-[#818181] text-base">Project Ideas</dt>
                         </div>
                         <div className="">
                             <dd class="order-first tracking-tight">
-                                <span class="fontInter font-bold text-[#0066FF] text-5xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers2)] before:content-[counter(num)]"> <span class="sr-only">20</span>+</span>
+                                <span class="fontInter font-bold text-[#0066FF] text-5xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers2)] before:content-[counter(num)]"> <span class="sr-only">30</span>+</span>
                             </dd>
                             <dt class="fontInter font-medium text-[#818181] text-base">Mentors & Faculty Advisors</dt>
                         </div>
