@@ -119,6 +119,9 @@ function Form() {
                             <option value="Psychology">Psychology</option>
                             <option value="International Relations">International Relations</option>
                             <option value="Law">Law</option>
+                            <option value="Social Science">Social Science</option>
+                            <option value="Sports Science">Sports Science</option>
+                            <option value="Environment and Sustainabilty">Environment and Sustainabilty</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
