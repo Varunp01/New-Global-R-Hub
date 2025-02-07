@@ -6,7 +6,7 @@ const HSec1 = () => {
         <>
             <div className="">
                 <div className="flex bg-cover bg-center bg-[url('https://i.ibb.co/grJVQRq/globnal.jpg')]">
-                    <div className="md:flex md:justify-around md:items-center h-full w-[100%] border-white bg-gradient-to-r from-white via-white to-transparent  md:py-8">
+                    <div className="md:flex md:justify-around md:items-center w-[100%] border-white bg-gradient-to-r from-white via-white to-transparent  md:py-8  ">
                         <div className="w-[100%] md:w-[40%] p-7">
 
                             <div className="fontInter font-semibold text-6xl">India’s No.1 <span className="text-[#0066FF]">Online Research Program</span> for Students</div>
@@ -30,7 +30,7 @@ const HSec1 = () => {
 
                         </div>
 
-                        <div className="w-[100%] md:w-[40%] flex justify-center " id="form"><Form></Form></div>
+                        <div className="w-[100%] md:w-[40%] h-full flex justify-center " id="form"><Form></Form></div>
                     </div>
                 </div>
             </div>
