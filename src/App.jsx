@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import Whychoose from "./pages/Whychoose.jsx";
 import BandA from "./pages/BandA.jsx";
 import Reviews from "./pages/Reviews.jsx";
+import CustomForm from "./pages/CustomForm.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/Whychoose" element={<Whychoose />} />
           <Route path="/BandA" element={<BandA />} />
+          <Route path="/customForm" element={<CustomForm />} />
           {/* <Route path="/reviews" element={<Reviews />} /> */}
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>

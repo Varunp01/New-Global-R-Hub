@@ -68,3 +68,26 @@
   background: #2b80ff;
   border-radius: 5px;
 }
+
+.form-control{
+  width: 100% !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  color: black !important;
+}
+
+.country-list :hover{
+  background-color: rgb(255, 255, 255) !important;
+  color: black !important;
+}
+.country-list{
+  color: white !important;
+  background-color: black !important;
+  border-radius: 20px;
+}
+.search  {
+  background-color: rgb(29, 29, 29) !important;
+}
+.highlight{
+background-color: rgb(53, 53, 53) !important;
+}
