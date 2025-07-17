@@ -26,7 +26,7 @@ const HSec2 = () => {
                                 <dt class="fontInter font-medium text-[#818181] text-base">Student Satisfaction Rate</dt>
                             </div>
                         </div>
-                        <div className="fontInter md:px-40 px-6  sm:text-center font-bold text-black text-5xl py-2">EXPLORE RESEARCH INNOVATE WITH GLOBAL R-HUB</div>
+                        <div className="fontInter md:px-40 px-6  sm:text-center font-bold text-black text-5xl py-2">EXPLORE RESEARCH PROJECTS WITH GLOBAL R-HUB</div>
                         <div className="fontInter md:px-40 text-center px-5 font-medium text-[#818181] text-base py-2">Receive global expert mentorship from leading international faculty and PhD fellows to turn your academic interests into impactful, publishable research project!</div>
                     </div>
                 </div>
