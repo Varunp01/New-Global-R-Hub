@@ -11,7 +11,7 @@ const HSec6 = () => {
                     <div className="rounded-3xl mt-[100px] h-[100%] pt-20 px-2 pb-5 bg-gradient-to-t from-white via-white to-transparent">
                         <div class="mt-[55px] block text-left  text-wrap w-[100%] mb-5">
                             <div className="fontInter font-bold text-[#000000] text-2xl">Young Scholar <br /> (Grades 6-8)</div>
-                            <div className="fontInter font-medium text-[#818181] text-base">Project based learning with age-appropriate topics in STEM, humanities, arts, business etc. which give you an early advantage and set you apart from your peers.</div>
+                            <div className="fontInter font-medium text-[#818181] text-base">Project-based learning with age-appropriate topics in STEM, humanities, arts, business, etc., which gives you an early advantage and sets you apart from your peers.</div>
                         </div>
                     </div>
                 </div>

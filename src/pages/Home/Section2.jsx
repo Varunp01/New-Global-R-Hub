@@ -36,7 +36,7 @@ const HSec2 = () => {
                     <div className="md:pr-16">
                         <div className="fontInter font-semibold text-[#0066FF] text-lg py-2">We Have Achieved</div>
                         <div className="fontInter font-bold text-black text-5xl py-2">EXPLORE RESEARCH INNOVATE WITH GLOBAL R-HUB</div>
-                        <div className="fontInter font-medium text-[#818181] text-base py-2">Receive global expert mentorship from leading international faculty and PhD fellows to turn your academic interests into impactful, publishable research project!</div>
+                        <div className="fontInter font-medium text-[#818181] text-base py-2">Receive global expert mentorship from leading international faculty and PhD fellows to turn your academic interests into impactful, publishable research projects!</div>
                     </div>
                 </div>
 
