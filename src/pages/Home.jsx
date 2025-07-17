@@ -1,5 +1,5 @@
 import HSec1 from "./Home/Section1.jsx";
-import HSec2 from "./Home/Section2.jsx";
+import HSec2 from "./Home/Section2 copy.jsx";
 import HSec3 from "./Home/Section3.jsx";
 import HSec4 from "./Home/Section4.jsx";
 import HSec5 from "./Home/Section5.jsx";

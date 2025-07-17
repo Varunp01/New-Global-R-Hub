@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 .fontInter{
     font-family: "Inter", serif;
 }

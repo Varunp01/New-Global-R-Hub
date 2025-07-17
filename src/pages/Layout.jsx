@@ -13,6 +13,7 @@ const Layout = () => {
                     <div className="navbtn1 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/" className=" hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Home</span></Link></div>
                     <div className="navbtn2 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/Whychoose" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 active:bg-[#F93800]/20 rounded-md">Why Choose Global R-Hub?</span></Link></div>
                     <div className="navbtn3 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/BandA" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Before & After</span></Link></div>
+                    <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/#form" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 hover:text-[#68696F] rounded-md  bg-[#0066ff] text-white">Download Brochure</span></Link></div>
                     {/* <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/reviews" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Testimonials</span></Link></div> */}
                 </div>
 
@@ -34,6 +35,7 @@ const Layout = () => {
                             <div className="navbtn1 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/" className=" hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Home</span></Link></div>
                             <div className="navbtn2 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/Whychoose" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 active:bg-[#F93800]/20 rounded-md">Why Choose Global R-Hub?</span></Link></div>
                             <div className="navbtn3 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/BandA" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Before & After</span></Link></div>
+                            <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/#form" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 hover:text-[#68696F] rounded-md  bg-[#0066ff] text-white">Download Brochure</span></Link></div>
                             {/* <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/reviews" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Testimonials</span></Link></div> */}
                         </div>
                     </>

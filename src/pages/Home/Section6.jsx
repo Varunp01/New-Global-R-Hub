@@ -4,7 +4,7 @@ const HSec6 = () => {
         <>
         <div className=" my-14 ">
             {/* <div className=" flex justify-center fontInter font-medium text-[#0066FF] text-lg py-2 px-6">Let's Begin</div> */}
-            <div className="flex justify-center fontInter font-bold text-black text-5xl py-2 px-6">Do Your Know When to Start?</div>
+            <div className="flex justify-center sm:text-center md:px-40 fontInter font-bold text-black text-5xl py-2 px-6">Project Based Learning For Students, Graduates, & Postgraduates</div>
             <div className="flex justify-around flex-wrap py-5 px-6 my-5">
 
                 <div class="overflow-hidden hover:shadow-2xl hover:shadow-[#0066ff75] w-[300px] h-[450px] mt-6 border-2 rounded-3xl max-w-sm shadow-xl text-center  bg-cover bg-center bg-[url('https://i.ibb.co/7JSGv0q0/smiling-young-school-boy-wearing-backpack-with-cap-holding-books-crossing-fingers-isolated-white-wal.jpg')]">
