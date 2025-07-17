@@ -9,7 +9,7 @@ const HSec2 = () => {
                         <div className="Numbers text-center items-center p-5 flex justify-evenly flex-wrap">
                             <div className="px-5 py-2">
                                 <dd class="order-first tracking-tight">
-                                    <span class="fontInter font-bold text-[#0066FF] text-7xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sronly">60</span>+</span>
+                                    <span class="fontInter font-bold text-[#0066FF] text-7xl animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-numbers1)] before:content-[counter(num)]"> <span class="sr-only">60</span>+</span>
                                 </dd>
                                 <dt class="fontInter font-medium text-[#818181] text-base">Project Ideas</dt>
                             </div>
