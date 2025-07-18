@@ -5,6 +5,8 @@ const ThankYou = () => {
     const navigate = useNavigate();
     const gotohome = () => {
         navigate('/');
+        // location.href='/thankyou';
+            window.location.reload();
     };
   const containerVariants = {
     hidden: { opacity: 0 },

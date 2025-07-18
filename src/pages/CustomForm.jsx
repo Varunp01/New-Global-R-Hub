@@ -25,12 +25,16 @@ const CustomForm = () => {
     // console.log("Formatted Value:", formattedValue);
   };
 
+  let notificationclosebtn = (e) => {
+    e.preventDefault();
+    document.getElementById("notificaton").style.display = "none";
+  }
   let onSubmitButton = async (e) => {
     e.preventDefault();
     console.log(name, "+", email, "+", countryPhone, "+", codePhone, "+", rawPhone, "+", phno, "+", domainInterest);
     try {
       const link = document.createElement('a');
-      link.href = "/";
+      link.href = "/Brochure_2025.pdf";
       link.download = "Brochure_2025.pdf";
       document.body.appendChild(link);
       link.click();
@@ -67,9 +71,8 @@ const CustomForm = () => {
           document.body.scrollTop = document.documentElement.scrollTop = 0;
           setTimeout(() => {
             navigate('/thankyou');
-            location.href='/thankyou';
-            window.location.reload();
-            setDataSend(false);
+            // location.href='/thankyou';
+            // window.location.reload();
           }, 2000);
           setName("");
           setEmail("");
@@ -89,7 +92,9 @@ const CustomForm = () => {
       <div className="w-full mx-auto" id='formHeading'>
 
         {(!dataSend)
-          ? <div className=" bg-[#000000] shadow-2xl shadow-black rounded-2xl p-8 md:p-10">
+          ? <div className=" pb-20 pt-5 w-[100%] absolute bg-[#000000b9] z-10 overflow-x-hidden overflow-y-hidden flex justify-center text-center">
+          <div className="md:w-[50%] w-[100%] px-5">
+           <div className=" bg-[#000000] shadow-2xl shadow-black rounded-2xl p-8 md:p-10">
             <form className="space-y-5" onSubmit={onSubmitButton} role="form">
               <h1 className="text-2xl font-bold  sm:text-5xl md:text-3xl text-center text-gray-100 uppercase">
                 Global R-Hub
@@ -221,15 +226,17 @@ const CustomForm = () => {
               </div>
             </form>
           </div>
+          </div>
+          </div>
           : <>
             
             {/* submit notifictaion bar */}
-            <div className="fixed top-4 right-4 z-50 animate-in slide-in-from-top-2 duration-300">
+            <div id="notificaton" className="fixed top-4 right-4 z-50 animate-in slide-in-from-top-2 duration-300">
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-lg shadow-lg p-6 max-w-md w-full mx-4">
                 {/* Close Button */}
                 <button
                   type="button"
-                  onClick={() => setDataSend(false)}
+                  onClick={notificationclosebtn}
                   className="absolute top-3 right-3 text-green-600 hover:text-green-800 hover:bg-green-100 rounded-full p-1 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-300"
                   aria-label="Close"
                 >

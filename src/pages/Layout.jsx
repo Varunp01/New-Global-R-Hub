@@ -3,9 +3,10 @@ import { useState } from 'react'
 import CustomForm from "./CustomForm";
 
 const Layout = () => {
-    const handleDownloadClick = () => {
-        setShowCustomForm(!showCustomForm);
-        if(showCustomForm){
+    const handleDownloadClick = async () => {
+        setShowCustomForm(!showCustomForm)
+        if (showCustomForm) {
+            
             alert("fill the form");
             setShowNav(false);
         }
@@ -57,11 +58,7 @@ const Layout = () => {
 
             {(!showCustomForm)
                 ? <>
-                    <div className=" pb-20 pt-5 w-[100%] absolute bg-[#000000b9] z-10 overflow-x-hidden overflow-y-hidden flex justify-center text-center">
-                        <div className="md:w-[50%] w-[100%] px-5">
-                            <CustomForm></CustomForm>
-                        </div>
-                    </div>
+                    <CustomForm></CustomForm>
                 </>
                 : <>
 
