@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Send, Phone, Mail, MapPin } from "lucide-react"
 import { useNavigate } from 'react-router-dom';
+import { Send, Phone, Mail, MapPin } from "lucide-react"
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 const CustomForm = () => {
@@ -66,6 +66,7 @@ const CustomForm = () => {
           setDataSend(true);
           document.body.scrollTop = document.documentElement.scrollTop = 0;
           setTimeout(() => {
+            window.location.reload();
             setDataSend(false);
           }, 5000);
           setName("");
