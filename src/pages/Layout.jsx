@@ -1,8 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState } from 'react'
+import CustomForm from "./CustomForm";
 
 const Layout = () => {
+    const handleDownloadClick = () => {
+        setShowCustomForm(!showCustomForm);
+        if(showCustomForm){
+            alert("fill the form");
+            setShowNav(false);
+        }
+    };
     const [ShowNav, setShowNav] = useState(false);
+    const [showCustomForm, setShowCustomForm] = useState(true);
     return (
         <>
             <div className="nav w-full md:flex">
@@ -13,7 +22,7 @@ const Layout = () => {
                     <div className="navbtn1 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/" className=" hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Home</span></Link></div>
                     <div className="navbtn2 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/Whychoose" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 active:bg-[#F93800]/20 rounded-md">Why Choose Global R-Hub?</span></Link></div>
                     <div className="navbtn3 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/BandA" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Before & After</span></Link></div>
-                    <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/#form" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 hover:text-[#68696F] rounded-md  bg-[#0066ff] text-white">Download Brochure</span></Link></div>
+                    <div className="navbtn4  cursor-pointer px-5 py-3 text-[#68696F] text-base font-medium"><div onClick={handleDownloadClick} className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 hover:text-[#68696F] rounded-md  bg-[#0066ff] text-white">Download Brochure</span></div></div>
                     {/* <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/reviews" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Testimonials</span></Link></div> */}
                 </div>
 
@@ -22,20 +31,20 @@ const Layout = () => {
                         <div className="navbtns md:w-2/3  sm:hidden sm:items-center justify-center text-center md:justify-normal">
                             <div className="navbtn1 px-5 py-3 text-[#68696F] text-base font-medium" onClick={() => setShowNav(true)}>
                                 <span className=" flex justify-center text-center p-2 text-2xl hover:bg-[#F93800]/20 rounded-md">
-                                Tap to see more pages 
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                                    Tap to see more pages
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg>
                                 </span>
-                                </div>
+                            </div>
                         </div>
                     </>
                     : <>
                         <div className="navbtns md:w-2/3  sm:hidden sm:items-center justify-center text-center md:justify-normal">
-                            <div className="navbtn1 px-5 py-1 text-[#68696F] text-base font-medium"><span className=" rounded-md flex justify-end"><svg onClick={() => setShowNav(false)} className=" m-3 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></span></div>
+                            <div className="navbtn1 px-5 py-1 text-[#68696F] text-base font-medium"><span className=" rounded-md flex justify-end"><svg onClick={() => setShowNav(false)} className=" m-3 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg></span></div>
                             <div className="navbtn1 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/" className=" hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Home</span></Link></div>
                             <div className="navbtn2 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/Whychoose" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 active:bg-[#F93800]/20 rounded-md">Why Choose Global R-Hub?</span></Link></div>
                             <div className="navbtn3 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/BandA" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Before & After</span></Link></div>
-                            <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/#form" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 hover:text-[#68696F] rounded-md  bg-[#0066ff] text-white">Download Brochure</span></Link></div>
+                            <div className="navbtn4  cursor-pointer px-5 py-3 text-[#68696F] text-base font-medium"><div onClick={handleDownloadClick} className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 hover:text-[#68696F] rounded-md  bg-[#0066ff] text-white">Download Brochure</span></div></div>
                             {/* <div className="navbtn4 px-5 py-3 text-[#68696F] text-base font-medium"><Link to="/reviews" className="hover:text-[#F93800]"><span className="p-2 hover:bg-[#F93800]/20 rounded-md">Testimonials</span></Link></div> */}
                         </div>
                     </>
@@ -45,6 +54,19 @@ const Layout = () => {
 
             </div>
 
+
+            {(!showCustomForm)
+                ? <>
+                    <div className=" pb-20 pt-5 w-[100%] absolute bg-[#000000b9] z-10 overflow-x-hidden overflow-y-hidden flex justify-center text-center">
+                        <div className="md:w-[50%] w-[100%] px-5">
+                            <CustomForm></CustomForm>
+                        </div>
+                    </div>
+                </>
+                : <>
+
+                </>
+            }
             <Outlet />
 
 

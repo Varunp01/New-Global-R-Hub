@@ -28,46 +28,56 @@ const CustomForm = () => {
   let onSubmitButton = async (e) => {
     e.preventDefault();
     console.log(name, "+", email, "+", countryPhone, "+", codePhone, "+", rawPhone, "+", phno, "+", domainInterest);
+    try {
+      const link = document.createElement('a');
+      link.href = "/";
+      link.download = "Brochure_2025.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      console.log(`Attempting to download: Brochure_2025.pdf`);
+    } catch (error) {
+      console.error("Error during PDF download:", error);
+    }
+    try {
+      fetch('https://sheetdb.io/api/v1/5sw73hhev510k', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              'website': `globalrhub.arevei.tech`,
+              'name': `${name}`,
+              'email': `${email}`,
+              'countryPhone': `${countryPhone}`,
+              'codePhone': `${codePhone}`,
+              'rawPhone': `${rawPhone}`,
+              'Phone': `${phno}`,
+              'domainInterest': `${domainInterest}`
+            }
+          ]
+        })
+      }).then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          setDataSend(true);
+          document.body.scrollTop = document.documentElement.scrollTop = 0;
+          setTimeout(() => {
+            setDataSend(false);
+          }, 5000);
+          setName("");
+          setEmail("");
+          setPhno("");
+          setDomainInterest("");
+        });
 
-    // try {
-    //   fetch('https://sheetdb.io/api/v1/bllevnx615ar0', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Accept': 'application/json',
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({
-    //       data: [
-    //         {
-    //           'website': `globalrhub.arevei.tech`,
-    //           'name': `${name}`,
-    //           'email': `${email}`,
-    //           'countryPhone': `${countryPhone}`,
-    //           'codePhone': `${codePhone}`,
-    //           'rawPhone': `${rawPhone}`,
-    //           'Phone': `${phno}`,
-    //           'domainInterest': `${domainInterest}`
-    //         }
-    //       ]
-    //     })
-    //   }).then((response) => response.json())
-    //     .then((data) => {
-    //       console.log(data);
-    //       setDataSend(true);
-    //       document.body.scrollTop = document.documentElement.scrollTop = 0;
-    //       setTimeout(() => {
-    //         setDataSend(false);
-    //       }, 5000);
-    //       setName("");
-    //       setEmail("");
-    //       setPhno("");
-    //       setDomainInterest("");
-    //     });
-
-    // } catch (error) {
-    //   alert(`try again because of ${error}`);
-    //   console.error('Error adding data:', error);
-    // }
+    } catch (error) {
+      alert(`try again because of ${error}`);
+      console.error('Error adding data:', error);
+    }
   }
 
 
@@ -76,15 +86,15 @@ const CustomForm = () => {
       <div className="w-full mx-auto" id='formHeading'>
 
         {(!dataSend)
-          ? <div className=" bg-[#000000] rounded-2xl shadow-xl p-8 md:p-10 text-black">
-            <form className="space-y-8" onSubmit={onSubmitButton} role="form">
-              <h1 className="text-2xl font-bold  sm:text-5xl md:text-3xl text-center text-white uppercase">
+          ? <div className=" bg-[#000000] shadow-2xl shadow-black rounded-2xl p-8 md:p-10">
+            <form className="space-y-5" onSubmit={onSubmitButton} role="form">
+              <h1 className="text-2xl font-bold  sm:text-5xl md:text-3xl text-center text-gray-100 uppercase">
                 Global R-Hub
               </h1>
               <hr />
               {/* Full Name */}
               <div>
-                <label htmlFor="form-name" className="block text-lg font-semibold text-gray-100 mb-3">
+                <label htmlFor="form-name" className="block text-lg font-semibold text-gray-100 mb-2">
                   Full Name
                 </label>
                 <div className="relative">
@@ -113,7 +123,7 @@ const CustomForm = () => {
 
               {/* Email */}
               <div>
-                <label htmlFor="form-email" className="block text-lg font-semibold text-gray-100 mb-3">
+                <label htmlFor="form-email" className="block text-lg font-semibold text-gray-100 mb-2">
                   Your Email
                 </label>
                 <div className="relative">
@@ -143,7 +153,7 @@ const CustomForm = () => {
 
               {/* Phone Number */}
               <div>
-                <label htmlFor="phone-number" className="block text-lg font-semibold text-gray-100 mb-3">
+                <label htmlFor="phone-number" className="block text-lg font-semibold text-gray-100 mb-2">
                   Your WhatsApp No.
                 </label>
                 <div className="relative">
@@ -173,15 +183,25 @@ const CustomForm = () => {
 
               {/* Your Domain of Interest */}
               <div>
-                <label htmlFor="domainInterest" className="block text-lg font-semibold text-gray-100 mb-3">
+                <label htmlFor="domainInterest" className="block text-lg font-semibold text-gray-100 mb-2">
                   Your Domain of Interest
                 </label>
                 <div className="relative">
                   <select className='w-full px-4 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:ring-4 focus:ring-blue-100 focus:outline-none transition-all duration-200 placeholder-gray-400' onChange={(e) => setDomainInterest(e.target.value)} value={domainInterest} name="domainInterest" id="domainInterest" required>
                     <option value="">Select Domain of Interest</option>
-                    <option value="student">Student</option>
-                    <option value="working-professional">Working Professional</option>
-                    <option value="parent">Parent</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Finance & Accounting">Finance & Accounting</option>
+                    <option value="Business Studies">Business Studies</option>
+                    <option value="AI & Emerging Technology">AI & Emerging Technology</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="International Relations">International Relations</option>
+                    <option value="Law">Law</option>
+                    <option value="Social Science">Social Science</option>
+                    <option value="Sports Science">Sports Science</option>
+                    <option value="Environment and Sustainabilty">Environment and Sustainabilty</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -191,22 +211,15 @@ const CustomForm = () => {
               <div className="pt-6">
                 <button
                   type="submit"
-                  className=" flex w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-blue-300 justify-center"
+                  className=" flex w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-gray-100 font-bold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-blue-300 justify-center"
                 >
-                  Request a Call Back &nbsp;<Send className="" />
+                  Submit &nbsp;<Send className="" />
                 </button>
-              </div>
-              <div className="text-center mt-8">
-                <p className="text-gray-400">We'll get back to you within 24 hours</p>
               </div>
             </form>
           </div>
           : <>
-            <div class="flex flex-row gap-2 justify-center">
-              <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
-              <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.3s]"></div>
-              <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
-            </div>
+            
             {/* submit notifictaion bar */}
             <div className="fixed top-4 right-4 z-50 animate-in slide-in-from-top-2 duration-300">
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-lg shadow-lg p-6 max-w-md w-full mx-4">
@@ -226,7 +239,7 @@ const CustomForm = () => {
                 <div className="flex items-start space-x-3">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>

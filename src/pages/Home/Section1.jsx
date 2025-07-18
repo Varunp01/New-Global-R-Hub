@@ -31,9 +31,9 @@ const HSec1 = () => {
 
                         </div>
 
-                        <div className="md:px-0 px-5 w-[100%] md:w-[40%] h-full flex justify-center shadow-lg shadow-cyan-500/50" id="form">
-                            {/* <Form></Form> */}
-                            <CustomForm></CustomForm>
+                        <div className="md:px-0 px-5 w-[100%] md:w-[40%] h-full flex justify-center " id="form">
+                            <Form></Form>
+                            {/* <CustomForm></CustomForm> */}
                             </div>
                     </div>
                 </div>
