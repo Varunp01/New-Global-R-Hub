@@ -66,9 +66,11 @@ const CustomForm = () => {
           setDataSend(true);
           document.body.scrollTop = document.documentElement.scrollTop = 0;
           setTimeout(() => {
+            navigate('/thankyou');
+            location.href='/thankyou';
             window.location.reload();
             setDataSend(false);
-          }, 5000);
+          }, 2000);
           setName("");
           setEmail("");
           setPhno("");
