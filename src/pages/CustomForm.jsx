@@ -249,7 +249,7 @@ const CustomForm = () => {
                   <div className="flex-1 pt-0.5">
                     <h3 className="text-lg font-semibold text-green-800 mb-1">Message Received!</h3>
                     <p className="text-green-700 text-sm leading-relaxed">
-                      Your message has been received. We will be in touch shortly.
+                      The brochure is currently downloading.
                     </p>
                   </div>
                 </div>
