@@ -119,6 +119,9 @@ const HSec8 = () => {
                     <div className="fontInter font-semibold text-[#0066FF] text-lg">Youtube Testimonials</div>
                     <div className="customScroll flex overflow-x-scroll">
                         <div className="  w-[500px] min-w-[300px]   my-5 mx-2 bg-[#0F172A] rounded-3xl">
+                            <HSec8_2 img="/VideoT.jpg" vid="24Z6-j60_Cc?si=uzUmOf2hFV163Xjj"></HSec8_2>
+                        </div>
+                        <div className="  w-[500px] min-w-[300px]   my-5 mx-2 bg-[#0F172A] rounded-3xl">
                             <HSec8_2 img="/VideoT1.png" vid="GolPHn292_4?si=dqP5IYXfPDi3Od9T"></HSec8_2>
                         </div>
                         <div className="  w-[500px] min-w-[300px]   my-5 mx-2 bg-[#0F172A] rounded-3xl">

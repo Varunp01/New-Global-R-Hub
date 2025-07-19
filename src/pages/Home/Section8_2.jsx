@@ -17,7 +17,7 @@ const HSec8_2 = ({img,vid}) => {
       <img
         src={`${img}`}
         alt="Video Thumbnail"
-        className="cursor-pointer w-auto h-auto" // Tailwind classes for width and height, and cursor
+        className="cursor-pointer w-auto h-auto rounded-lg" // Tailwind classes for width and height, and cursor
         onClick={openPopup}
       />
 
