@@ -1,3 +1,4 @@
+import HSec8_2 from "./Section8_2";
 
 
 
@@ -108,10 +109,26 @@ const HSec8 = () => {
                                 Dr. Shivendu, was the chair of my dissertation committee during my doctoral program in information systems at USF. His research mentorship, constant support and deep knowledge of research methods helped me in growing into an academic. Dr. Shivendu has deep commitment towards student success and his professional as well as academic journey is inspiring.
                             </div>
                         </div>
+                    </div>
+                    <hr />
+                    
+                </div>
 
-                        {/* <img src="https://i.ibb.co/Fs1tQBZ/Group-83.png" alt="Card1" className=" md:w-[40%] w-[80%] py-5 px-5" /> */}
-                        {/* <img src="https://i.ibb.co/Fs1tQBZ/Group-83.png" alt="Card1" className=" md:w-[40%] w-[80%] py-5 px-5"/>
-                <img src="https://i.ibb.co/Fs1tQBZ/Group-83.png" alt="Card1" className=" md:w-[40%] w-[80%] py-5 px-5"/> */}
+                {/* ////////////////////////////////////////////////////////////////////////////// */}
+                <div className="py-10">
+                    <div className="fontInter font-semibold text-[#0066FF] text-lg">Youtube Testimonials</div>
+                    <div className="customScroll flex overflow-x-scroll">
+                        <div className="  w-[500px] min-w-[300px]   my-5 mx-2 bg-[#0F172A] rounded-3xl">
+                            <HSec8_2 img="/VideoT1.png" vid="GolPHn292_4?si=dqP5IYXfPDi3Od9T"></HSec8_2>
+                        </div>
+                        <div className="  w-[500px] min-w-[300px]   my-5 mx-2 bg-[#0F172A] rounded-3xl">
+                            <HSec8_2 img="/VideoT2.png" vid="V9lw7vEiQBc?si=-Fw43T6S-tBeR75R"></HSec8_2>
+                        </div>
+                        <div className="  w-[500px] min-w-[300px]   my-5 mx-2 bg-[#0F172A] rounded-3xl">
+                            <HSec8_2 img="/VideoT3.png" vid="8EhEHHtMtxg?si=AfX5_ZR5rD9AVL9_"></HSec8_2>
+                        </div>
+
+                        
                     </div>
                     <hr />
                     

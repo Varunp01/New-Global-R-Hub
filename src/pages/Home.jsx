@@ -6,6 +6,7 @@ import HSec5 from "./Home/Section5.jsx";
 import HSec6 from "./Home/Section6.jsx";
 import HSec7 from "./Home/Section7.jsx";
 import HSec8 from "./Home/Section8.jsx";
+import HSec8_2 from "./Home/Section8_2.jsx";
 import HSec9 from "./Home/Section9.jsx";
 import StarBand from "./Home/StarBand.jsx";
 
