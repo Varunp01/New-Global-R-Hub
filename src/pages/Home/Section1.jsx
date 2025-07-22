@@ -9,8 +9,7 @@ const HSec1 = () => {
                 <div className="flex bg-cover bg-center bg-[url('https://i.ibb.co/grJVQRq/globnal.jpg')]">
                     <div className="md:flex md:justify-around md:items-center w-[100%] border-white bg-gradient-to-r from-white via-white to-transparent  md:py-8  ">
                         <div className="w-[100%] md:w-[40%] p-7">
-
-                            <div className="fontInter font-semibold text-6xl">India’s No.1 <span className="text-[#0066FF]">Online Research Program</span> for Students</div>
+                            <div className="fontInter font-semibold text-6xl">Enroll <span className="text-[#0066FF]">India’s #1</span> Student Research Platform.</div>
                             <div className="fontInter font-medium text-base text-[#818181] my-5">Receive global expert mentorship from leading international faculty and PhD fellows to turn your academic interests into impactful, publishable research projects!
                                 <ul className=" mt-4 ml-4 list-disc list-inside">
                                     <li className='animate__animated animate__backInLeft animate__delay-0s'>Stand Out in College Admissions</li>
